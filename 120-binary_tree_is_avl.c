@@ -27,10 +27,10 @@ int btia_helper(const binary_tree_t *tree, int min, int max)
 
 	if (!tree)
 		return (1);
-	if (tree->n  min || tree->n > max)
+	if (tree->n < min || tree->n > max)
 		return (0);
 	path_l = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-	path_r = tree->right ? 1 + binary_tree_-height(tree->right) : 0;
+	path_r = tree->right ? 1 + binary_tree_height(tree->right) : 0;
 
 	if (abs(path_l - path_r) > 1)
 		return (0);

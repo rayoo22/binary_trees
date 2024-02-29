@@ -33,7 +33,7 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 int _pow_recursion(int x, int y);
 void binary_tree_print(const binary_tree_t *);
-void btlo_helper(const binary_tree_t *tree, void (*func)(int), size_t level)
+void btlo_helper(const binary_tree_t *tree, void (*func)(int), size_t level);
 int btci_helper(const binary_tree_t *tree, size_t index, size_t size);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);

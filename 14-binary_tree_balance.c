@@ -5,7 +5,7 @@
  * @tree: a pointer to the root node of the tree to measure the balance factor
  * Return: if tree is NULL,return 0 else return balace factor
  */
-int binary_tree_balace(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (tree)
 		return (binary_tree_height(tree->left) - binary_tree_height(tree->right));
